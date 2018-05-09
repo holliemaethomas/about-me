@@ -13,7 +13,7 @@ if (questOne === 'N') {
   alert('You scored your first point! I grew up in Cool, California. it is a real town. google it!')
   userPoints += 1
 } else {
-  alert('nope! I grew up in Cool, CA. it is a real town. google it! '); }
+  alert('nope! I grew up in Cool, CA. It is a real town. google it! '); }
 console.log('the user entered ' + questOne + ' user has ' + userPoints)
 
 var questTwo = prompt('Is my favorite music is metal?').toUpperCase()
@@ -52,4 +52,4 @@ if (questFive === 'Y') {
 }
 console.log('the user entered ' + questFive + ' user has ' + userPoints);
 
-alert('well ' + userName + ' you scored a total of ' + userPoints + + ' points ' + ' not bad!');
+alert('well ' + userName + ' you scored a total of ' + userPoints + ' points ' + 'not bad!');
