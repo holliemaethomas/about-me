@@ -16,7 +16,7 @@ if (questOne === 'N') {
   alert('nope! I grew up in Cool, CA. It is a real town. google it! '); }
 console.log('the user entered ' + questOne + ' user has ' + userPoints)
 
-var questTwo = prompt('Is my favorite music is metal?').toUpperCase()
+var questTwo = prompt('Is my favorite music metal?').toUpperCase()
 if (questTwo === 'Y') {
   alert('Yup! I am the mom at the metal show. Good job those points are adding up!')
   userPoints += 1
