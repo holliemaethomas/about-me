@@ -52,23 +52,35 @@
 // }
 // console.log('the user entered ' + questFive + ' user has ' + userPoints)
 
-var answer = 33;
-var attempts = 4;
-var questSix = parseInt(prompt('Lets change it up a bit! with all this awesome life experience how old do you think I am?'));
-console.log('user entered ' + questSix);
-while (attempts > 1 && questSix !== answer) {
-  attempts--;
-  questSix = parseInt(prompt('oh dear me, no. You have ' + attempts + ' tries left. Guess again.'));
-  console.log(questSix + attempts);
-}
-if (questSix == answer) {
-  alert('correct I am ' + answer);
-} else if (attempts == 1){
-  alert('Well...you tried....I am 33');
+// var answer = 33;
+// var attempts = 4;
+// var questSix = parseInt(prompt('Lets change it up a bit! with all this awesome life experience how old do you think I am?'));
+// console.log('user entered ' + questSix);
+// while (attempts > 1 && questSix !== answer) {
+//   attempts--;
+//   questSix = parseInt(prompt('oh dear me, no. You have ' + attempts + ' tries left. Guess again.'));
+//   console.log(questSix + attempts);
+// }
+// if (questSix == answer) {
+//   alert('correct I am ' + answer);
+//   userPoints += 1;
+// } else if (attempts == 1){
+//   alert('Well...you tried....I am 33');
+// }
+
+var favoriteMovies = ['fargo', 'war games', 'dark city', 'revenant', 'no country for old men', 'the goonies'];
+var movieAttempts = 6;
+var questSeven = prompt('OK, last question ' + 'userName' + '. Can you guess my favorite movie? I will give you a hint: The only winning move is not to play').toLocaleLowerCase;
+console.log('The user entered' + questSeven);
+while (movieAttempts > 1 && questSeven !== favoriteMovies) {
+  movieAttempts--;
+  questSeven = prompt('That is a good movie but not my favorite you have ' + movieAttempts + ' remaining');
+  console.log(questSeven + movieAttempts);
+  if (questSeven === [1]){
+    alert('Yessir! ' + [1] + ' is my favorite but, I would have also accepted ' + favoriteMovies);
+    // userPoints += 1; 
+  } else if (movieAttempts == 1) {
+    alert('and I thought we were friends, my favorite movie is War Games but I would have accepted' + favoriteMovies)
+  }
 }
 
-// var favoriteMovie = ['Fargo', 'War Games',   'The Goonies']
-// favoriteMovie.push('Cloak and Dagger')
-// for (var i = 0)
-
-// alert('well ' + userName + ' you scored a total of ' + userPoints + ' points ' + 'not bad!')
