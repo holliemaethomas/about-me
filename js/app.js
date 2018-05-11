@@ -55,13 +55,13 @@ var ageGuess = [0];
 
 var questSix = prompt('With all my awesome experience can you guess my age? I will even give you four tries');
 console.log('user entered ' + questSix);
-for (i in ageGuess < 3)
-console.log(ageGuess[i]);
+for (var i = 0; i < 3; i++)
+doument.write(i);
 while (questSix !== 33); {
   ageGuess.push += 1;
-} do {
+} do 
   var tryAgain = prompt('please try again');
-}
+
 
 // var favoriteMovie = ['Fargo', 'War Games',   'The Goonies']
 // favoriteMovie.push('Cloak and Dagger');
