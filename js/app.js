@@ -87,22 +87,24 @@ function age() {
 }
 age();
 
-
-var favoriteMovies = ['FARGO' , 'WAR GAMES', 'DARK CITY', 'THE LAST UNICORN', 'NO COUNTRY FOR OLD MEN', 'THE GOONIES'];
-var movieAttempts = 0;
-var correct;
-var questSeven = prompt('OK, last question ' + 'userName' + '. Can you guess my favorite movie? I will give you a hint: The only winning move is not to play').toUpperCase();
-console.log('The user entered ' + questSeven);
-while (movieAttempts < 7){
-  for (var i = 0; i < favoriteMovies.length; i++) {
-    console.log(questSeven);
-    if (questSeven === favoriteMovies[i]) {
-      alert('Congrats!');
-      correct = true;
+function movies () {
+  var favoriteMovies = ['FARGO' , 'WAR GAMES', 'DARK CITY', 'THE LAST UNICORN', 'NO COUNTRY FOR OLD MEN', 'THE GOONIES'];
+  var movieAttempts = 0;
+  var correct;
+  var questSeven = prompt('OK, last question ' + 'userName' + '. Can you guess my favorite movie? I will give you a hint: The only winning move is not to play').toUpperCase();
+  console.log('The user entered ' + questSeven);
+  while (movieAttempts < 7){
+    for (var i = 0; i < favoriteMovies.length; i++) {
+      console.log(questSeven);
+      if (questSeven === favoriteMovies[i]) {
+        alert('Congrats!');
+        correct = true;
+      }
+    }
+    if (questSeven !== favoriteMovies[i]) {
+      movieAttempts++;
+      alert('No, sorry ' + 'userName' + '. You have ' + movieAttempts + ' remaining.');
     }
   }
-  if (questSeven !== favoriteMovies[i]) {
-    movieAttempts++;
-    alert('No, sorry ' + 'userName' + '. You have ' + movieAttempts + ' remaining.');
-  }
 }
+movies ();
