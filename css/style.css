@@ -3,7 +3,8 @@
 }
 
 body {
-  background-image: url("/Users/holliethomas/codefellows/201/about-me/img/tree.jpg");
+  background-image: url("../img/tree.jpg");
+border-block-end-color: rgb(87, 36, 134)
 
 }
 #intro
