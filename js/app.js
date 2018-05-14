@@ -1,6 +1,6 @@
-'use strict'
+'use strict';
 // global
-var userPoints = 0
+var userPoints = 0;
 
 // var greeting = alert('Hello there! my name is Hollie')
 // var extraPoints = alert('but there are some who call me Tim!')
@@ -69,20 +69,20 @@ var userPoints = 0
 // }
 // console.log('the user entered ' + questSix + ' user has ' + userPoints)
 
-
-var favoriteMovies = [ 'FARGO ' , 'WAR GAMES ', ' DARK CITY', ' THE LAST UNICORN ', 'NO COUNTRY FOR OLD MEN ', ' THE GOONIES'];
+var favoriteMovies = ['FARGO','WAR GAMES','DARK CITY','THE LAST UNICORN', 'NO COUNTRY FOR OLD MEN','THE GOONIES'];
 var movieAttempts = 6;
-var questSeven = prompt('OK, last question ' + 'userName' + '. Can you guess my favorite movie? I will give you a hint: The only winning move is not to play').toUpperCase();
-console.log('The user entered ' + questSeven);
-for (var i = 0; i < favoriteMovies.length; i++) {
-  while (movieAttempts > 1 && questSeven !== favoriteMovies.length);
-  movieAttempts--;
-  questSeven = prompt('That is a good movie but not my favorite, you have ' + movieAttempts + ' remaining');
-  console.log(questSeven + movieAttempts);
-  if (questSeven === favoriteMovies || favoriteMovies[1]) {
-    alert('Yessir! ' + favoriteMovies[1] + ' is my favorite but, I would have also accepted ' + favoriteMovies);
-    userPoints += 1;
-  } else if (movieAttempts === 1) {
-    alert('and I thought we were friends, my favorite movie is War Games but I would have accepted ' + favoriteMovies);
-  }
+var answer = favoriteMovies;
+console.log(favoriteMovies);
+var question = prompt('Last question, can you guess one of my favorite movies? I will give you a hint: The only winning move is not to play').toUpperCase();
+console.log('the user entered ' + question);
+if (question === answer) {
+  alert('Absolutely! that is one of my favorite movies');
 }
+while (movieAttempts > 0 && question !== answer) {
+ var wrongAnswer = prompt('no sorry, that is not one of my favorites. Please try again you have ' + movieAttempts + ' remaining').toUpperCase();
+  movieAttempts--;
+} if (movieAttempts > 0 && question !== answer) {
+  alert('sorry you are out of guesses');
+}
+
+//having trouble with getting answer to = all indicies in the array
