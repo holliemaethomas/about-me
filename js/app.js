@@ -69,9 +69,9 @@ var userPoints = 0;
 // }
 // console.log('the user entered ' + questSix + ' user has ' + userPoints)
 
-var favoriteMovies = ['FARGO','WAR GAMES','DARK CITY','THE LAST UNICORN', 'NO COUNTRY FOR OLD MEN','THE GOONIES'];
+var favoriteMovies = ['FARGO', 'WAR GAMES', 'DARK CITY', 'THE LAST UNICORN', 'NO COUNTRY FOR OLD MEN', 'THE GOONIES'];
 var movieAttempts = 6;
-var answer = favoriteMovies;
+var answer = favoriteMovies[2];
 console.log(favoriteMovies);
 var question = prompt('Last question, can you guess one of my favorite movies? I will give you a hint: The only winning move is not to play').toUpperCase();
 console.log('the user entered ' + question);
@@ -79,10 +79,8 @@ if (question === answer) {
   alert('Absolutely! that is one of my favorite movies');
 }
 while (movieAttempts > 0 && question !== answer) {
- var wrongAnswer = prompt('no sorry, that is not one of my favorites. Please try again you have ' + movieAttempts + ' remaining').toUpperCase();
+  prompt('no sorry, that is not one of my favorites. Please try again you have ' + movieAttempts + ' remaining').toUpperCase();
   movieAttempts--;
-} if (movieAttempts > 0 && question !== answer) {
+} if (movieAttempts < 0 && question !== answer) {
   alert('sorry you are out of guesses');
 }
-
-//having trouble with getting answer to = all indicies in the array
