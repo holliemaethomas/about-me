@@ -72,23 +72,24 @@ console.log('the user entered ' + questSix + ' user has ' + userPoints);
 function flickGuess(){
   var favoriteMovies = ['FARGO','WAR GAMES','DARK CITY','THE LAST UNICORN','NO COUNTRY FOR OLD MEN','THE GOONIES'];
   var movieAttempts = 6;
-  var answerM = favoriteMovies[1];
-  //add for loop! for (var i .....)
+  // var answer = favoriteMovies.every;
   console.log(favoriteMovies);
   var question = prompt('Last question, can you guess one of my favorite movies? I will give you a hint: The only winning move is not to play').toUpperCase();
   console.log('the user entered ' + question);
-  // for (var i = 0; i < favoriteMovies[i]; i++){
-  while (movieAttempts > 0 && question !== answerM) {
-    movieAttempts--;
-    prompt('no sorry, that is not one of my favorites. Please try again you have ' + movieAttempts + ' remaining').toUpperCase();
+  for (var i = 0; i < favoriteMovies[i]; i++)
+  {
+    if (movieAttempts > 0 && question !== favoriteMovies.every) {
+      movieAttempts--;
+      prompt('no sorry, that is not one of my favorites. Please try again you have ' + movieAttempts + ' remaining').toUpperCase();
 
-    if (question === answerM) {
-      alert('Absolutely! that is one of my favorite movies');
-    }
-    if (movieAttempts === 0 && question !== answerM) {
+    }if (movieAttempts === 0 && question !== favoriteMovies.every) {
       alert('sorry you are out of guesses');
+
+    } if (question === favoriteMovies.every) {
+      alert('Absolutely! that is one of my favorite movies');
+      console.log('the user entered');
     }
+
   }
 }
-// }
 flickGuess();
